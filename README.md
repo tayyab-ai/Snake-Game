@@ -1,60 +1,67 @@
-# Neon Coil — Snake Game
+# 🐍 Snake Game - Level Infinity
 
-A retro-arcade styled Snake game built for the web. Glowing neon snake, CRT scanline effect, increasing speed, and touch controls — pure HTML, CSS, and vanilla JavaScript, no dependencies.
+A professional, visually stunning snake game with realistic textures, infinite levels, and smooth gameplay. Built with vanilla JavaScript and HTML5 Canvas.
 
-![Made with HTML, CSS, JS](https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JS-4cf1c7)
-![No dependencies](https://img.shields.io/badge/dependencies-none-14181f)
-![License](https://img.shields.io/badge/license-MIT-6d7688)
+![Snake Game Preview](preview.png)
 
-## 🎮 Features
+## ✨ Features
 
-- **Classic Snake gameplay** on a 20×20 grid, rendered on `<canvas>`
-- **Neon arcade visual style** — glowing gradient snake body, pulsing food, CRT scanlines
-- **Progressive difficulty** — speed increases automatically as your score grows
-- **Score + Best tracking** for the current session
-- **Full keyboard controls** — Arrow keys or WASD, Space to pause/resume
-- **On-screen D-pad** for mobile/touch devices
-- **Pause / Resume / Game Over overlays**
-- **Fully responsive** — playable on desktop and mobile
+### 🎮 Gameplay
+- **Infinite Levels**: Each food eaten = 1 level up. No level cap!
+- **Speed Progression**: Game gets faster with each level
+- **Golden Apples**: 20% chance of golden apple spawn for extra thrill
+- **Wrap-Around Mode**: Snake wraps around screen edges (no wall death)
+- **Self-Collision**: Only way to die is hitting your own body
 
-## 🖥️ Live Preview
+### 🎨 Visual Excellence
+- **Realistic Snake Textures**: Gradient scales with highlights and shadows
+- **Animated Eyes**: Snake eyes follow movement direction
+- **Particle Effects**: Burst particles when eating food
+- **Motion Trail**: Ghost trail behind the snake
+- **Pulsing Food**: Animated apples with glow effects
+- **Level Up Notification**: Dramatic popup with bounce animation
+- **Starfield Background**: Dynamic twinkling stars
 
-Open `index.html` in any modern browser — no build step, no installation, no dependencies.
+### 🎵 Audio
+- **Sound Effects**: Eat and death sounds
+- **Sound Toggle**: Mute/unmute with button
+- **Web Audio API**: No external audio files needed
 
-## 📁 Project Structure
+### 📊 Stats & Progress
+- **Score Tracking**: Points multiplier increases with level
+- **Best Score**: Persistent high score via localStorage
+- **Real-time Stats**: Score, level, food count, speed display
+- **Survival Timer**: Track how long you survived
 
-```
-├── index.html      # Markup / structure
-├── style.css        # Neon arcade theme & layout
-├── script.js        # Game loop, rendering, and input handling
-└── README.md         # You're here
-```
+### 🕹️ Controls
+| Key | Action |
+|-----|--------|
+| `↑` `↓` `←` `→` | Move snake |
+| `W` `A` `S` `D` | Alternative movement |
+| `SPACE` / `P` | Pause/Resume |
+| `ENTER` | Start game |
+
+- **Touch Support**: Swipe gestures for mobile devices
+
+### 📱 Responsive Design
+- Fully responsive for desktop and mobile
+- Adaptive canvas sizing
+- Touch-optimized controls
 
 ## 🚀 Getting Started
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   ```
-2. Open `index.html` in your browser — that's it.
+### Live Demo
+Open `index.html` in any modern browser. No dependencies!
 
-Or deploy instantly with **GitHub Pages**:
-`Settings → Pages → Deploy from branch → main`
+### Local Setup
+```bash
+# Clone repository
+git clone https://github.com/Tayyab/snake-game.git
 
-## ⌨️ Controls
+# Navigate to folder
+cd snake-game
 
-| Key | Action |
-|---|---|
-| `↑ ↓ ← →` or `W A S D` | Move |
-| `Space` | Pause / Resume |
-| On-screen D-pad | Move (touch devices) |
-
-## 🛠️ Tech
-
-- **HTML5 Canvas** for rendering
-- **CSS3** — custom properties, responsive layout, glow/scanline effects
-- **Vanilla JavaScript** — game loop, collision detection, and state management, no external libraries
-
-## 📄 License
-
-This project is open source under the [MIT License](https://opensource.org/licenses/MIT).
+# Open in browser
+open index.html
+# OR
+python -m http.server 8000
